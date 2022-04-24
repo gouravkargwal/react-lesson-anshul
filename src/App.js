@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Conditional from "./Conditional";
+import Form from "./Form";
 import Text from "./Text";
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
   ];
   return (
     <>
-      {data.map((a, b) => {
+      {/* {data.map((a, b) => {
         return (
           <>
             <Text name={a.name} age={a.age} />
@@ -28,7 +29,8 @@ function App() {
         );
       })}
       <Conditional />
-      <Text name="Akashy" age="21" />
+      <Text name="Akashy" age="21" /> */}
+      <Form />
     </>
   );
 }
