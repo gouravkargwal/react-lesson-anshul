@@ -14,13 +14,13 @@ const Form = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     console.log(data);
   };
 
   return (
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" onChange={handleChnage} />
         <label htmlFor="email">Email</label>
@@ -32,7 +32,7 @@ const Form = () => {
           name="password"
           onChange={handleChnage}
         />
-        <button onClick={handleSubmit}>Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );

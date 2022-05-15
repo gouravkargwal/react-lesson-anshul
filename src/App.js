@@ -3,6 +3,8 @@ import "./App.css";
 import Conditional from "./Conditional";
 import Form from "./Form";
 import Text from "./Text";
+import Title from "./Title";
+import CounterContextProvider from "./contexts/CounterContext";
 
 function App() {
   const data = [
@@ -20,7 +22,7 @@ function App() {
     },
   ];
   return (
-    <>
+    <CounterContextProvider>
       {/* {data.map((a, b) => {
         return (
           <>
@@ -30,8 +32,9 @@ function App() {
       })}
       <Conditional />
       <Text name="Akashy" age="21" /> */}
-      <Form />
-    </>
+      {/* <Form /> */}
+      <Title />
+    </CounterContextProvider>
   );
 }
 
